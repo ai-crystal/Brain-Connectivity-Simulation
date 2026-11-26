@@ -10,7 +10,7 @@
 
 作者：Dr. Dezeming　·　2026
 
-**在线阅读**：[在线阅读站](https://dezeming.github.io/whole-brain-simulation/)　·　**仓库**：[GitHub 仓库](https://github.com/dezeming/whole-brain-simulation)
+**在线阅读**：[在线阅读站](https://ai-crystal.github.io/Brain-Connectivity-Simulation/)　·　**仓库**：[GitHub 仓库](https://github.com/ai-crystal/Brain-Connectivity-Simulation)
 
 ## 分册
 
