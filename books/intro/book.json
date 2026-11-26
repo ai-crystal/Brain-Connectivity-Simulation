@@ -1,0 +1,15 @@
+{
+  "series": "全脑仿真",
+  "title": "从神经元到果蝇大脑",
+  "subtitle": "全脑仿真入门",
+  "volume": "01",
+  "pdf": "whole-brain-intro.pdf",
+  "author": "Dr. Dezeming",
+  "year": "2026",
+  "accent": "#1f4e79",
+  "cover": "images/cover.jpg",
+  "back": "images/back.jpg",
+  "blurb": "一只果蝇的脑被完整测绘、被放进虚拟身体，然后开始行走、觅食、梳理触角。这件事是怎么发生的，之前的八十年又发生了什么。",
+  "keywords": ["全脑仿真", "连接组", "计算神经科学", "果蝇"],
+  "toc_depth": 2
+}

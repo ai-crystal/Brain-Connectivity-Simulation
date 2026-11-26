@@ -1,0 +1,8 @@
+_private/
+papers/
+books/build/.build/
+books/code/__pycache__/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

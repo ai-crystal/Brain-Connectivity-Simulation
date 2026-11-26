@@ -1,0 +1,15 @@
+{
+  "series": "全脑仿真",
+  "title": "连接组、动力学与仿真",
+  "subtitle": "全脑仿真理论专精",
+  "volume": "02",
+  "pdf": "whole-brain-theory.pdf",
+  "author": "Dr. Dezeming",
+  "year": "2026",
+  "accent": "#2f5d50",
+  "cover": "images/cover.jpg",
+  "back": "images/back.jpg",
+  "blurb": "把一张接线图变成一组方程，再把方程变成可运行的系统。中间每一步的假设、代价与边界，都在这里展开。",
+  "keywords": ["计算神经科学", "霍奇金赫胥黎模型", "网络动力学", "连接组"],
+  "toc_depth": 2
+}
