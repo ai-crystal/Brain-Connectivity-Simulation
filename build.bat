@@ -13,7 +13,7 @@ if not defined PYEXE if exist "C:\Python312\python.exe" set "PYEXE=C:\Python312\
 if not defined PYEXE if exist "%LOCALAPPDATA%\Programs\Python\Launcher\py.exe" set "PYEXE=%LOCALAPPDATA%\Programs\Python\Launcher\py.exe" & set "PYARG=-3"
 if not defined PYEXE (
   echo [ERROR] Python 3.10+ not found. Please install Python and retry.
-  pause
+  echo Press any key to exit. & pause >nul
   exit /b 1
 )
 "%PYEXE%" %PYARG% -c "import typst, pypandoc, fitz" >nul 2>nul
@@ -22,7 +22,7 @@ if errorlevel 1 (
   "%PYEXE%" %PYARG% -m pip install --upgrade typst pypandoc_binary pymupdf matplotlib
   if errorlevel 1 (
     echo [ERROR] Failed to install dependencies.
-    pause
+    echo Press any key to exit. & pause >nul
     exit /b 1
   )
 )
@@ -31,14 +31,14 @@ echo [BUILD] Building all books...
 "%PYEXE%" %PYARG% books\build\build.py
 if errorlevel 1 (
   echo [ERROR] Build failed.
-  pause
+  echo Press any key to exit. & pause >nul
   exit /b 1
 )
 "%PYEXE%" %PYARG% booksuild\check.py
 if errorlevel 1 (
   echo [ERROR] Check failed.
-  pause
+  echo Press any key to exit. & pause >nul
   exit /b 1
 )
 echo [DONE] PDFs are in the output folder.
-pause
+echo Press any key to exit. & pause >nul
