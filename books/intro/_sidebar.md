@@ -18,9 +18,7 @@
 - [第 13 章　路线之争与未来](/books/intro/chapters/ch13.md)
 
 - **附录**
-  - [延伸阅读](/books/intro/appendix/reading.md)
-  - [术语中英对照](/books/intro/appendix/glossary.md)
+  - [附录 B　术语中英对照](/books/intro/appendix/glossary.md)
+  - [附录 A　延伸阅读](/books/intro/appendix/reading.md)
 
-- [后记](/books/intro/front/afterword.md)
-
-- [下载 PDF](/output/whole-brain-intro.pdf ':ignore')
+- <a href="/output/v1-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

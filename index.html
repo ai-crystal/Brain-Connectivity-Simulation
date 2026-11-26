@@ -2,98 +2,120 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>全脑仿真 · Dr. Dezeming</title>
-  <meta name="description" content="从果蝇大脑到数字心智，全脑仿真的入门与理论">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta name="description" content="从果蝇大脑到数字心智">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <style>
-    :root {
-      --theme-color: #2f5d72;
-      --base-font-family: "Source Han Serif SC", "Noto Serif CJK SC", Georgia, "Songti SC", serif;
-      --content-max-width: 780px;
+    :root { --theme-color: #2f5d72; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    .sidebar { border-right: 1px solid #eee; }
+    .sidebar ul li a { font-size: 14px; }
+    .markdown-section { max-width: 860px; padding: 28px 36px 80px; line-height: 1.82; }
+    .markdown-section img { max-width: 100%; height: auto; display: block; margin: 1.2em auto; }
+    .markdown-section figcaption { text-align: center; color: #777; font-size: 13px; margin-top: -.4em; }
+    .markdown-section table { display: table; width: 100%; font-size: .95rem; }
+    .markdown-section blockquote { color: #4a5568; border-left: 3px solid var(--theme-color); background: #f7fafc; padding: .4em 1em; }
+    .app-nav { display: none; }
+    section.cover { background: radial-gradient(circle at 20% 18%, #23384c 0, #0b1119 48%, #05080d 100%) !important; }
+    section.cover .mask { background: rgba(0, 0, 0, .18) !important; }
+    section.cover .cover-main { max-width: 860px; margin-left: auto !important; margin-right: auto !important; text-align: center; }
+    section.cover .cover-main p { text-align: center; }
+    section.cover .cover-main h1,
+    section.cover .cover-main h1 a,
+    section.cover .cover-main h1 a span { font-size: clamp(2.2rem, 7vw, 4.2rem); letter-spacing: .08em; color: #fff !important; text-decoration: none; }
+    section.cover .cover-main blockquote { border-left: none; background: none; }
+    section.cover .cover-main blockquote p { color: #d7e0ea !important; font-size: 1.05rem; }
+    section.cover .cover-main p { color: #b9c6d4 !important; }
+    section.cover .cover-main p strong { color: #eef4fa !important; }
+    section.cover .cover-main > p:last-child a { color: #fff !important; border: 1px solid rgba(255,255,255,.7) !important; background: transparent !important; }
+    section.cover .cover-main > p:last-child a:first-child { background: var(--theme-color) !important; border-color: var(--theme-color) !important; }
+    section.cover .cover-main > p:last-child a:hover { background: rgba(255,255,255,.14) !important; }
+    @media (max-width: 768px) {
+      .markdown-section { padding: 20px 18px 60px; }
     }
-    .sidebar { font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; }
-    .cover { background: linear-gradient(160deg, #0b1a2b 0%, #17384f 55%, #2f5d72 100%); }
-    .cover .cover-main > p:first-child a { font-size: 3rem; letter-spacing: 0.08em; }
-    .cover .cover-main blockquote p { color: rgba(255,255,255,0.85); }
-    .cover .cover-main .cover-read,
-    .cover .cover-main .cover-download {
-      display: inline-block; margin: 0.4rem 0.35rem; padding: 0.55rem 1.4rem;
-      border-radius: 999px; font-size: 0.95rem; text-decoration: none;
-    }
-    .cover .cover-main .cover-read { background: #ffffff; color: #17384f; }
-    .cover .cover-main .cover-download { border: 1px solid rgba(255,255,255,0.7); color: #fff; }
-    .markdown-section { line-height: 1.85; }
-    .markdown-section h1 { font-size: 1.9rem; }
-    .markdown-section h2 { margin-top: 2.2rem; }
-    .markdown-section img { display: block; margin: 1rem auto; max-width: 100%; }
-    .markdown-section table { display: table; width: 100%; }
-    .markdown-section blockquote { border-left: 3px solid var(--theme-color); background: #f6f8f9; padding: 0.4rem 1rem; }
   </style>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中……</div>
   <script>
     window.$docsify = {
       name: '全脑仿真',
       repo: 'https://github.com/ai-crystal/Brain-Connectivity-Simulation',
+      homepage: 'README.md',
       loadSidebar: true,
       coverpage: true,
+      relativePath: true,
       subMaxLevel: 2,
       maxLevel: 3,
-      homepage: 'README.md',
-      relativePath: true,
+      auto2top: true,
+      noCompileLinks: ['output/', '\\.pdf$'],
       search: {
-        placeholder: '搜索',
-        noData: '没有找到内容',
+        placeholder: '搜索全书',
+        noData: '没有找到内容。',
+        paths: 'auto',
         depth: 3
       },
       pagination: {
         previousText: '上一章',
         nextText: '下一章',
-        crossChapter: true
+        crossChapter: true,
+        firstText: '回到开头',
+        lastText: '去往结尾'
       },
       copyCode: {
         buttonText: '复制',
         errorText: '复制失败',
         successText: '已复制'
       },
+      mermaid: { theme: 'default' },
       plugins: [
         function (hook) {
-          hook.beforeEach(function (md) {
+          hook.doneEach(function () {
             var route = decodeURI(location.hash.replace(/^#\/?/, '').split('?')[0]);
             if (!route || /\/$/.test(route)) { route += 'README.md'; }
             var dir = route.replace(/[^\/]*$/, '');
-            function normalize(base, p) {
-              var stack = base.split('/').filter(Boolean);
+            function normalize(p) {
+              var stack = dir.split('/').filter(Boolean);
               p.split('/').forEach(function (seg) {
                 if (seg === '..') { stack.pop(); }
                 else if (seg !== '.' && seg !== '') { stack.push(seg); }
               });
               return '/' + stack.join('/');
             }
-            md = md.replace(/(!\[[^\]]*\]\()([^)\s]+)(\))/g, function (all, pre, src, post) {
-              if (/^[a-zA-Z]+:\/\//.test(src) || src.charAt(0) === '/') { return all; }
-              return pre + normalize(dir, src) + post;
+            document.querySelectorAll('.markdown-section img').forEach(function (img) {
+              var src = img.getAttribute('src') || '';
+              if (src && !/^(https?:|\/|data:)/.test(src)) {
+                img.setAttribute('src', normalize(src));
+              }
             });
-            md = md.replace(/(<img[^>]+src=["'])([^"']+)(["'])/g, function (all, pre, src, post) {
-              if (/^[a-zA-Z]+:\/\//.test(src) || src.charAt(0) === '/') { return all; }
-              return pre + normalize(dir, src) + post;
-            });
-            return md;
+            if (window.renderMathInElement) {
+              window.renderMathInElement(document.querySelector('.markdown-section'), {
+                delimiters: [
+                  { left: '$$', right: '$$', display: true },
+                  { left: '\\[', right: '\\]', display: true },
+                  { left: '\\(', right: '\\)', display: false },
+                  { left: '$', right: '$', display: false }
+                ],
+                throwOnError: false,
+                ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+              });
+            }
           });
         }
       ]
     };
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@1/dist/docsify-katex.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.5/dist/mermaid.min.js"></script>
+  <script>if (window.mermaid) { mermaid.initialize({ startOnLoad: false, theme: 'neutral' }); }</script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
 </body>
 </html>

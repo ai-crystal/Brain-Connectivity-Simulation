@@ -2,10 +2,11 @@
 
 > 从果蝇大脑到数字心智
 
-一只果蝇的脑被完整测绘，接上虚拟身体，然后开始行走。
+2024 年，一只成年果蝇的完整大脑被逐突触地测绘出来，约 13.9 万个神经元、5000 万个连接。有人把这套接线图接到计算模型上，让它在虚拟身体里走动、理毛、靠近食物。
 
 **Dr. Dezeming**　·　2026
 
-<a class="cover-read" href="#/books/intro/README">开始阅读</a>
-
-<a class="cover-download" href="#/README">书目与下载</a>
+<p class="cover-links">
+<a href="#/books/intro/README">开始阅读</a>
+<a href="#/README">书目与下载</a>
+</p>

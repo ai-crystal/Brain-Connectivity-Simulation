@@ -17,9 +17,7 @@
 - [第 12 章　保真度、尺度与边界](/books/theory/chapters/ch12.md)
 
 - **附录**
-  - [术语中英对照](/books/theory/appendix/glossary.md)
-  - [符号表](/books/theory/appendix/symbols.md)
+  - [附录 A　术语中英对照](/books/theory/appendix/glossary.md)
+  - [附录 B　符号表](/books/theory/appendix/symbols.md)
 
-- [后记](/books/theory/front/afterword.md)
-
-- [下载 PDF](/output/whole-brain-theory.pdf ':ignore')
+- <a href="/output/v2-theory.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
