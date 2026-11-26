@@ -60,7 +60,7 @@ def ensure_deps():
     except Exception:
         raise SystemExit("缺少 typst 包，请运行：python -m pip install typst")
     try:
-        import fitz  # noqa: F401
+        import pymupdf  # noqa: F401
     except Exception:
         pass
 
@@ -221,8 +221,8 @@ def build_book(book_arg: str, make_pdf: bool = True):
     size_mb = pdf_out.stat().st_size / 1024 / 1024
     pages = ""
     try:
-        import fitz
-        with fitz.open(pdf_out) as doc:
+        import pymupdf
+        with pymupdf.open(pdf_out) as doc:
             pages = f"，{doc.page_count} 页"
     except Exception:
         pass
