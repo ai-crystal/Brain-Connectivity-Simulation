@@ -14,8 +14,8 @@
 
 | 册 | 书名 | 一句话 | 页数 | 在线阅读 | PDF |
 | --- | --- | --- | ---: | --- | --- |
-| 01 | [从神经元到果蝇大脑](books/intro/README.md) | 从一只果蝇的脑讲起，把全脑仿真的来龙去脉说清楚 | 75 | [阅读](books/intro/README.md) | <a href="output/v1-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 02 | [连接组、动力学与仿真](books/theory/README.md) | 把接线图写成方程，再把方程跑起来 | 62 | [阅读](books/theory/README.md) | <a href="output/v2-theory.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 01 | [从神经元到果蝇大脑](books/intro/README.md) | 从一只果蝇的脑讲起，把全脑仿真的来龙去脉说清楚 | 143 | [阅读](books/intro/README.md) | <a href="output/v1-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 02 | [连接组、动力学与仿真](books/theory/README.md) | 把接线图写成方程，再把方程跑起来 | 126 | [阅读](books/theory/README.md) | <a href="output/v2-theory.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 
 ## 怎么读
 
